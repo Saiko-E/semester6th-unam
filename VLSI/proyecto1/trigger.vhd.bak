@@ -9,7 +9,7 @@ end entity;
 architecture arqtrigger of trigger is--implementa la arquitectura
 begin
 
-	process(clk)--proceso con parámetros de la señal de reloj, reset y eco del sensor
+	process(clk, rst, echo)--proceso con parámetros de la señal de reloj, reset y eco del sensor
 	begin
 	
 		if(rst = '1') then  -- Si la señal de reset está activa

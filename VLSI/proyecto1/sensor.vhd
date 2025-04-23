@@ -1,33 +1,38 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
-entity sensor is--definición de la entidad sensor
-port (clk, rst, echo, reset, take: in std_logic;  -- Entradas del sistema: reloj, señal de reset y señal de eco del sensor
-		trig, pwm_motor: out std_logic;  -- Salida del sistema: señal de trigger
-		ss0, ss1: out std_logic_vector(6 downto 0);-- salidas del sistema en display de 7 segmentos
-		ss2, ss3: out std_logic_vector(6 downto 0));  -- Salidas del sistema: segmentos de display de 7 segmentos
+entity sensor is
+port	(clk, reset, echo: in std_logic; --señales de entrada para sensor
+		controlServo: out std_logic; --salida para servo
+		disparo: out std_logic; --salida para sensor
+		ssU, ssD: out std_logic_vector(6 downto 0) --Displays para distancia
+		);
 end entity;
 
-architecture arqsns of sensor is --Definición de arquitectura de sensor
-signal clkl, clkl1, clkl2, tr, inc, dec: std_logic;-- señales a usar derivadas de señal de reloj
-signal salida0, salida1, salida2, salida3, duty_motor, sal: integer;-- enteros usados en el módulo
-constant duty_sensor: integer := 500;--ciclo de trabajo para el sensor ultrasónico, definido en 500
-constant limite_sensor: integer := 25000000;--periodo para el uso del sensor ultrasónico
-constant limte_motor: integer := 1000;--periodo establecido para el movimiento del servomotor
-signal dis: integer;--entero que describe la distancia del objeto con el sensor
+architecture a of sensor is
+	signal clkSensor, clkServo, PWMSensor, trig: std_logic;
+	signal posIni, posFin: std_logic:='0';
+	signal distancia, uni, dec: integer;
+	signal dutyServo: integer range 0 to 200:=85;
+	
 begin
-
-	u1: entity work.divf(arqdivf) generic map(25) port map(clk, clkl1); -- Generador de frecuencia dividida
-	u2: entity work.senal(arqsenal) port map(clk, duty_sensor, limite_sensor,  clkl2); -- Generador de señal PWM
-	u3: entity work.trigger(arqtrigger) port map(clkl2, rst, echo, tr); -- Controlador de trigger
-	trig <= tr;  -- Asignación de la señal de trigger
+	--servo
+	relojServo: entity work.divf(arqdivf) generic map(500) port map(clk, clkServo); --Reloj para servomotor, 50KHz
+	relojSensor: entity work.divf(arqdivf) generic map(25) port map(clk, clkSensor); --1MHZ - 1us
 	
-	u4: entity work.contador(arqcontador) port map(echo, clkl1, tr, salida0, salida1, dis); -- Contador de salida
-	u5: entity work.dec7seg(arqdec) port map(salida0, ss0); -- Conversor de decimal a display de 7 segmentos para la salida0
-	u6: entity work.dec7seg(arqdec) port map(salida1, ss1); -- Conversor de decimal a display de 7 segmentos para la salida1
+	senalPWM: entity work.senal(arqsenal) port map(clk, 25000000, 500, PWMSensor); --generacion de pwm para sensor
 	
-	u7: entity work.divf(arqdivf) generic map(60) port map(clk, clkl);--divisor de frecuencia para la señal de reloj incluida en el hardware en uso
-	u8: entity work.movimiento(arqmov) port map(clkl, inc, dec, reset, salida0, duty_motor);--calcula movimiento del motor dependiendo de la salida del sensor
-	u9: entity work.senal(arqsenal) port map(clkl, duty_motor, limte_motor, pwm_motor);--envía indicaciones al motor para hacer los movimientos correspondientes
-
+	gatillo: entity work.trigger(arqtrigger) port map(PWMSensor, reset, echo, trig); --disparo sensor
+	disparo<=trig;
+	medicion: entity work.contador(arqConta) port map(echo, clkSensor, trig, distancia, uni, dec); --distancia sensor
+	
+	bcdUni: entity work.dec7seg(arqdec) port map(uni, ssU); --display unidades
+	bcdDec: entity work.dec7seg(arqdec) port map(dec, ssD); --display decimas
+	
+	posiServo: entity work.movimiento(arqMov) port map(distancia, reset, dutyServo); --posiciones del servo
+	
+	pwmServo: entity work.senal(arqsenal) port map(clkServo, 1000, dutyServo, controlServo); --control del servo
+	
 end architecture;

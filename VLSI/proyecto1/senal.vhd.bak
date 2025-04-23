@@ -11,6 +11,7 @@ port (clk: in std_logic;--señal de reloj(entrada)
 end entity;
 
 architecture arqsenal of senal is--definición de la arquitectura
+constant lim: integer := limite;--constante con el mismo valor que el periodo de la señal
 signal conteo: integer := 0;--cuenta los ciclos de reloj, inicia en 0
 begin
 

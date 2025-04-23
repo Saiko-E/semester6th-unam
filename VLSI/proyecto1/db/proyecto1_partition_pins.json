@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "controlServo",
+					"strict" : false
+				},
+				{
+					"name" : "disparo",
+					"strict" : false
+				},
+				{
+					"name" : "ssU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssU[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssU[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssU[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssU[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssU[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssU[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ssD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "echo",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

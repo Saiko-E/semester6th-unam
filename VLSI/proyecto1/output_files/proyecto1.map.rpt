@@ -1,0 +1,618 @@
+Analysis & Synthesis report for proyecto1
+Tue Apr 22 23:12:16 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Parameter Settings for User Entity Instance: divf:relojServo
+ 14. Parameter Settings for User Entity Instance: divf:relojSensor
+ 15. Parameter Settings for Inferred Entity Instance: contador:medicion|lpm_divide:Mod0
+ 16. Parameter Settings for Inferred Entity Instance: contador:medicion|lpm_divide:Div1
+ 17. Parameter Settings for Inferred Entity Instance: contador:medicion|lpm_divide:Div0
+ 18. Port Connectivity Checks: "senal:pwmServo"
+ 19. Port Connectivity Checks: "movimiento:posiServo"
+ 20. Port Connectivity Checks: "senal:senalPWM"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Apr 22 23:12:16 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; proyecto1                                      ;
+; Top-level Entity Name              ; sensor                                         ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 934                                            ;
+;     Total combinational functions  ; 933                                            ;
+;     Dedicated logic registers      ; 144                                            ;
+; Total registers                    ; 144                                            ;
+; Total pins                         ; 19                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; sensor             ; proyecto1          ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+; dec7seg.vhd                      ; yes             ; User VHDL File               ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/dec7seg.vhd                    ;         ;
+; trigger.vhd                      ; yes             ; User VHDL File               ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/trigger.vhd                    ;         ;
+; senal.vhd                        ; yes             ; User VHDL File               ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/senal.vhd                      ;         ;
+; sensor.vhd                       ; yes             ; User VHDL File               ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd                     ;         ;
+; movimiento.vhd                   ; yes             ; User VHDL File               ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/movimiento.vhd                 ;         ;
+; contador.vhd                     ; yes             ; User VHDL File               ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd                   ;         ;
+; divf.vhd                         ; yes             ; User VHDL File               ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd                       ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal231.inc                   ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc      ;         ;
+; db/lpm_divide_25o.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_divide_25o.tdf          ;         ;
+; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/abs_divider_4dg.tdf         ;         ;
+; db/alt_u_div_ske.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/alt_u_div_ske.tdf           ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/add_sub_t3c.tdf             ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/add_sub_u3c.tdf             ;         ;
+; db/lpm_abs_8b9.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_abs_8b9.tdf             ;         ;
+; db/lpm_divide_fbo.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_divide_fbo.tdf          ;         ;
+; db/abs_divider_kbg.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/abs_divider_kbg.tdf         ;         ;
+; db/alt_u_div_she.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/alt_u_div_she.tdf           ;         ;
+; db/lpm_abs_o99.tdf               ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_abs_o99.tdf             ;         ;
+; db/lpm_divide_otl.tdf            ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_divide_otl.tdf          ;         ;
+; db/sign_div_unsign_qlh.tdf       ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/sign_div_unsign_qlh.tdf     ;         ;
+; db/alt_u_div_uhe.tdf             ; yes             ; Auto-Generated Megafunction  ; /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/alt_u_div_uhe.tdf           ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                                              ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                                      ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 934                                                                                                                                        ;
+;                                             ;                                                                                                                                            ;
+; Total combinational functions               ; 933                                                                                                                                        ;
+; Logic element usage by number of LUT inputs ;                                                                                                                                            ;
+;     -- 4 input functions                    ; 253                                                                                                                                        ;
+;     -- 3 input functions                    ; 259                                                                                                                                        ;
+;     -- <=2 input functions                  ; 421                                                                                                                                        ;
+;                                             ;                                                                                                                                            ;
+; Logic elements by mode                      ;                                                                                                                                            ;
+;     -- normal mode                          ; 581                                                                                                                                        ;
+;     -- arithmetic mode                      ; 352                                                                                                                                        ;
+;                                             ;                                                                                                                                            ;
+; Total registers                             ; 144                                                                                                                                        ;
+;     -- Dedicated logic registers            ; 144                                                                                                                                        ;
+;     -- I/O registers                        ; 0                                                                                                                                          ;
+;                                             ;                                                                                                                                            ;
+; I/O pins                                    ; 19                                                                                                                                         ;
+;                                             ;                                                                                                                                            ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                                                                                          ;
+;                                             ;                                                                                                                                            ;
+; Maximum fan-out node                        ; contador:medicion|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider|add_sub_29_result_int[30]~58 ;
+; Maximum fan-out                             ; 89                                                                                                                                         ;
+; Total fan-out                               ; 2974                                                                                                                                       ;
+; Average fan-out                             ; 2.67                                                                                                                                       ;
++---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                             ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                       ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |sensor                                   ; 933 (0)             ; 144 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |sensor                                                                                                                   ; sensor              ; work         ;
+;    |contador:medicion|                    ; 743 (44)            ; 62 (62)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion                                                                                                 ; contador            ; work         ;
+;       |lpm_divide:Div0|                   ; 158 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_otl:auto_generated|  ; 158 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div0|lpm_divide_otl:auto_generated                                                   ; lpm_divide_otl      ; work         ;
+;             |sign_div_unsign_qlh:divider| ; 158 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div0|lpm_divide_otl:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh ; work         ;
+;                |alt_u_div_uhe:divider|    ; 158 (158)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div0|lpm_divide_otl:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe       ; work         ;
+;       |lpm_divide:Div1|                   ; 85 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_fbo:auto_generated|  ; 85 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div1|lpm_divide_fbo:auto_generated                                                   ; lpm_divide_fbo      ; work         ;
+;             |abs_divider_kbg:divider|     ; 85 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div1|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider                           ; abs_divider_kbg     ; work         ;
+;                |alt_u_div_she:divider|    ; 85 (85)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Div1|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider|alt_u_div_she:divider     ; alt_u_div_she       ; work         ;
+;       |lpm_divide:Mod0|                   ; 456 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_25o:auto_generated|  ; 456 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                   ; lpm_divide_25o      ; work         ;
+;             |abs_divider_4dg:divider|     ; 456 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                           ; abs_divider_4dg     ; work         ;
+;                |alt_u_div_ske:divider|    ; 456 (456)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|contador:medicion|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider     ; alt_u_div_ske       ; work         ;
+;    |dec7seg:bcdDec|                       ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|dec7seg:bcdDec                                                                                                    ; dec7seg             ; work         ;
+;    |dec7seg:bcdUni|                       ; 27 (27)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|dec7seg:bcdUni                                                                                                    ; dec7seg             ; work         ;
+;    |divf:relojSensor|                     ; 10 (10)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|divf:relojSensor                                                                                                  ; divf                ; work         ;
+;    |divf:relojServo|                      ; 19 (19)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|divf:relojServo                                                                                                   ; divf                ; work         ;
+;    |movimiento:posiServo|                 ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|movimiento:posiServo                                                                                              ; movimiento          ; work         ;
+;    |senal:pwmServo|                       ; 53 (53)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|senal:pwmServo                                                                                                    ; senal               ; work         ;
+;    |senal:senalPWM|                       ; 58 (58)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|senal:senalPWM                                                                                                    ; senal               ; work         ;
+;    |trigger:gatillo|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sensor|trigger:gatillo                                                                                                   ; trigger             ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; trigger:gatillo|salida                             ; echo                ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; contador:medicion|distancia[9..31]     ; Stuck at GND due to stuck port data_in ;
+; contador:medicion|decenas[6..30]       ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 48 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                 ;
++---------------------------------+---------------------------+---------------------------------------------------------------+
+; Register name                   ; Reason for Removal        ; Registers Removed due to This Register                        ;
++---------------------------------+---------------------------+---------------------------------------------------------------+
+; contador:medicion|distancia[31] ; Stuck at GND              ; contador:medicion|decenas[30], contador:medicion|decenas[29], ;
+;                                 ; due to stuck port data_in ; contador:medicion|decenas[28], contador:medicion|decenas[27], ;
+;                                 ;                           ; contador:medicion|decenas[26], contador:medicion|decenas[25], ;
+;                                 ;                           ; contador:medicion|decenas[24], contador:medicion|decenas[23]  ;
++---------------------------------+---------------------------+---------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 144   ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 14    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 61    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; contador:medicion|unidades[0]          ; 10      ;
+; contador:medicion|unidades[31]         ; 1       ;
+; contador:medicion|decenas[0]           ; 7       ;
+; contador:medicion|decenas[31]          ; 6       ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divf:relojServo ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; num            ; 500   ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divf:relojSensor ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; num            ; 25    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: contador:medicion|lpm_divide:Mod0 ;
++------------------------+----------------+------------------------------------------+
+; Parameter Name         ; Value          ; Type                                     ;
++------------------------+----------------+------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                  ;
+; LPM_WIDTHD             ; 32             ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_25o ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                           ;
++------------------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: contador:medicion|lpm_divide:Div1 ;
++------------------------+----------------+------------------------------------------+
+; Parameter Name         ; Value          ; Type                                     ;
++------------------------+----------------+------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                  ;
+; LPM_WIDTHD             ; 5              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_fbo ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                           ;
++------------------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: contador:medicion|lpm_divide:Div0 ;
++------------------------+----------------+------------------------------------------+
+; Parameter Name         ; Value          ; Type                                     ;
++------------------------+----------------+------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                  ;
+; LPM_WIDTHD             ; 6              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_otl ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                           ;
++------------------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "senal:pwmServo"      ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; duty[9..5]    ; Input ; Info     ; Stuck at VCC ;
+; duty[31..10]  ; Input ; Info     ; Stuck at GND ;
+; duty[2..0]    ; Input ; Info     ; Stuck at GND ;
+; duty[4]       ; Input ; Info     ; Stuck at GND ;
+; duty[3]       ; Input ; Info     ; Stuck at VCC ;
+; limite[31..8] ; Input ; Info     ; Stuck at GND ;
++---------------+-------+----------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "movimiento:posiServo"                                                                       ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; ancho[31..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "senal:senalPWM"      ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; duty[22..18]  ; Input ; Info     ; Stuck at VCC ;
+; duty[14..11]  ; Input ; Info     ; Stuck at VCC ;
+; duty[31..25]  ; Input ; Info     ; Stuck at GND ;
+; duty[10..7]   ; Input ; Info     ; Stuck at GND ;
+; duty[5..0]    ; Input ; Info     ; Stuck at GND ;
+; duty[24]      ; Input ; Info     ; Stuck at VCC ;
+; duty[23]      ; Input ; Info     ; Stuck at GND ;
+; duty[17]      ; Input ; Info     ; Stuck at GND ;
+; duty[16]      ; Input ; Info     ; Stuck at VCC ;
+; duty[15]      ; Input ; Info     ; Stuck at GND ;
+; duty[6]       ; Input ; Info     ; Stuck at VCC ;
+; limite[8..4]  ; Input ; Info     ; Stuck at VCC ;
+; limite[31..9] ; Input ; Info     ; Stuck at GND ;
+; limite[1..0]  ; Input ; Info     ; Stuck at GND ;
+; limite[3]     ; Input ; Info     ; Stuck at GND ;
+; limite[2]     ; Input ; Info     ; Stuck at VCC ;
++---------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 19                          ;
+; cycloneiii_ff         ; 144                         ;
+;     CLR               ; 1                           ;
+;     ENA               ; 48                          ;
+;     ENA CLR           ; 13                          ;
+;     SCLR              ; 32                          ;
+;     plain             ; 50                          ;
+; cycloneiii_lcell_comb ; 934                         ;
+;     arith             ; 352                         ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 109                         ;
+;         3 data inputs ; 218                         ;
+;     normal            ; 582                         ;
+;         0 data inputs ; 21                          ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 247                         ;
+;         3 data inputs ; 41                          ;
+;         4 data inputs ; 253                         ;
+;                       ;                             ;
+; Max LUT depth         ; 29.10                       ;
+; Average LUT depth     ; 18.15                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Tue Apr 22 23:12:04 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proyecto1 -c proyecto1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file dec7seg.vhd
+    Info (12022): Found design unit 1: dec7seg-arqdec File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/dec7seg.vhd Line: 10
+    Info (12023): Found entity 1: dec7seg File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/dec7seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file trigger.vhd
+    Info (12022): Found design unit 1: trigger-arqtrigger File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/trigger.vhd Line: 9
+    Info (12023): Found entity 1: trigger File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/trigger.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file senal.vhd
+    Info (12022): Found design unit 1: senal-arqsenal File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/senal.vhd Line: 13
+    Info (12023): Found entity 1: senal File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/senal.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file sensor.vhd
+    Info (12022): Found design unit 1: sensor-a File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 14
+    Info (12023): Found entity 1: sensor File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file movimiento.vhd
+    Info (12022): Found design unit 1: movimiento-arqMov File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/movimiento.vhd Line: 14
+    Info (12023): Found entity 1: movimiento File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/movimiento.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
+    Info (12022): Found design unit 1: contador-arqConta File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 14
+    Info (12023): Found entity 1: contador File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file divf.vhd
+    Info (12022): Found design unit 1: divf-arqdivf File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 13
+    Info (12023): Found entity 1: divf File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 6
+Info (12127): Elaborating entity "sensor" for the top level hierarchy
+Info (12129): Elaborating entity "divf" using architecture "A:arqdivf" for hierarchy "divf:relojServo" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 22
+Info (12129): Elaborating entity "divf" using architecture "A:arqdivf" for hierarchy "divf:relojSensor" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 23
+Info (12129): Elaborating entity "senal" using architecture "A:arqsenal" for hierarchy "senal:senalPWM" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 25
+Info (12129): Elaborating entity "trigger" using architecture "A:arqtrigger" for hierarchy "trigger:gatillo" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at trigger.vhd(15): signal "rst" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/trigger.vhd Line: 15
+Warning (10492): VHDL Process Statement warning at trigger.vhd(17): signal "echo" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/trigger.vhd Line: 17
+Warning (10631): VHDL Process Statement warning at trigger.vhd(12): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/trigger.vhd Line: 12
+Info (10041): Inferred latch for "salida" at trigger.vhd(12) File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/trigger.vhd Line: 12
+Info (12129): Elaborating entity "contador" using architecture "A:arqconta" for hierarchy "contador:medicion" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 29
+Info (12129): Elaborating entity "dec7seg" using architecture "A:arqdec" for hierarchy "dec7seg:bcdUni" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 31
+Info (12129): Elaborating entity "movimiento" using architecture "A:arqmov" for hierarchy "movimiento:posiServo" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at movimiento.vhd(25): signal "valor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/movimiento.vhd Line: 25
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "contador:medicion|Mod0" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 35
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "contador:medicion|Div1" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 36
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "contador:medicion|Div0" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 32
+Info (12130): Elaborated megafunction instantiation "contador:medicion|lpm_divide:Mod0" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 35
+Info (12133): Instantiated megafunction "contador:medicion|lpm_divide:Mod0" with the following parameter: File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 35
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_25o.tdf
+    Info (12023): Found entity 1: lpm_divide_25o File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_divide_25o.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
+    Info (12023): Found entity 1: abs_divider_4dg File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/abs_divider_4dg.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ske.tdf
+    Info (12023): Found entity 1: alt_u_div_ske File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/alt_u_div_ske.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/add_sub_t3c.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/add_sub_u3c.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_8b9.tdf
+    Info (12023): Found entity 1: lpm_abs_8b9 File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_abs_8b9.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "contador:medicion|lpm_divide:Div1" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 36
+Info (12133): Instantiated megafunction "contador:medicion|lpm_divide:Div1" with the following parameter: File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 36
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "5"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fbo.tdf
+    Info (12023): Found entity 1: lpm_divide_fbo File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_divide_fbo.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
+    Info (12023): Found entity 1: abs_divider_kbg File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/abs_divider_kbg.tdf Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_she.tdf
+    Info (12023): Found entity 1: alt_u_div_she File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/alt_u_div_she.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_o99.tdf
+    Info (12023): Found entity 1: lpm_abs_o99 File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_abs_o99.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "contador:medicion|lpm_divide:Div0" File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 32
+Info (12133): Instantiated megafunction "contador:medicion|lpm_divide:Div0" with the following parameter: File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/contador.vhd Line: 32
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_otl.tdf
+    Info (12023): Found entity 1: lpm_divide_otl File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/lpm_divide_otl.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_qlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_qlh File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/sign_div_unsign_qlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_uhe.tdf
+    Info (12023): Found entity 1: alt_u_div_uhe File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/db/alt_u_div_uhe.tdf Line: 27
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 953 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 934 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 445 megabytes
+    Info: Processing ended: Tue Apr 22 23:12:16 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:23
+
+

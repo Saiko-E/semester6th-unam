@@ -2,7 +2,7 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 85C Model Setup 'divf:u2|clkl'
 Slack : -26.518
 TNS   : -1052.821
 
@@ -10,7 +10,7 @@ Type  : Slow 1200mV 85C Model Setup 'clk'
 Slack : -4.014
 TNS   : -96.996
 
-Type  : Slow 1200mV 85C Model Setup 'divf:relojServo|clkl'
+Type  : Slow 1200mV 85C Model Setup 'divf:u1|clkl'
 Slack : -4.013
 TNS   : -121.932
 
@@ -22,11 +22,11 @@ Type  : Slow 1200mV 85C Model Hold 'clk'
 Slack : 0.355
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'divf:relojServo|clkl'
+Type  : Slow 1200mV 85C Model Hold 'divf:u1|clkl'
 Slack : 0.504
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 85C Model Hold 'divf:u2|clkl'
 Slack : 0.648
 TNS   : 0.000
 
@@ -34,11 +34,11 @@ Type  : Slow 1200mV 85C Model Hold 'echo'
 Slack : 2.037
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 85C Model Recovery 'divf:u2|clkl'
 Slack : -0.736
 TNS   : -9.727
 
-Type  : Slow 1200mV 85C Model Removal 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 85C Model Removal 'divf:u2|clkl'
 Slack : 1.153
 TNS   : 0.000
 
@@ -50,15 +50,15 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'echo'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divf:u2|clkl'
 Slack : -1.403
 TNS   : -86.986
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divf:relojServo|clkl'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divf:u1|clkl'
 Slack : -1.403
 TNS   : -46.299
 
-Type  : Slow 1200mV 0C Model Setup 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 0C Model Setup 'divf:u2|clkl'
 Slack : -23.812
 TNS   : -947.153
 
@@ -66,7 +66,7 @@ Type  : Slow 1200mV 0C Model Setup 'clk'
 Slack : -3.655
 TNS   : -83.359
 
-Type  : Slow 1200mV 0C Model Setup 'divf:relojServo|clkl'
+Type  : Slow 1200mV 0C Model Setup 'divf:u1|clkl'
 Slack : -3.609
 TNS   : -109.566
 
@@ -78,11 +78,11 @@ Type  : Slow 1200mV 0C Model Hold 'clk'
 Slack : 0.321
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'divf:relojServo|clkl'
+Type  : Slow 1200mV 0C Model Hold 'divf:u1|clkl'
 Slack : 0.456
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 0C Model Hold 'divf:u2|clkl'
 Slack : 0.598
 TNS   : 0.000
 
@@ -90,11 +90,11 @@ Type  : Slow 1200mV 0C Model Hold 'echo'
 Slack : 1.742
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 0C Model Recovery 'divf:u2|clkl'
 Slack : -0.740
 TNS   : -9.800
 
-Type  : Slow 1200mV 0C Model Removal 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 0C Model Removal 'divf:u2|clkl'
 Slack : 1.134
 TNS   : 0.000
 
@@ -106,15 +106,15 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'echo'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divf:relojSensor|clkl'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divf:u2|clkl'
 Slack : -1.403
 TNS   : -86.986
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divf:relojServo|clkl'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divf:u1|clkl'
 Slack : -1.403
 TNS   : -46.299
 
-Type  : Fast 1200mV 0C Model Setup 'divf:relojSensor|clkl'
+Type  : Fast 1200mV 0C Model Setup 'divf:u2|clkl'
 Slack : -10.164
 TNS   : -397.405
 
@@ -122,7 +122,7 @@ Type  : Fast 1200mV 0C Model Setup 'clk'
 Slack : -1.291
 TNS   : -12.585
 
-Type  : Fast 1200mV 0C Model Setup 'divf:relojServo|clkl'
+Type  : Fast 1200mV 0C Model Setup 'divf:u1|clkl'
 Slack : -1.155
 TNS   : -33.080
 
@@ -134,11 +134,11 @@ Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.152
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'divf:relojServo|clkl'
+Type  : Fast 1200mV 0C Model Hold 'divf:u1|clkl'
 Slack : 0.185
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'divf:relojSensor|clkl'
+Type  : Fast 1200mV 0C Model Hold 'divf:u2|clkl'
 Slack : 0.250
 TNS   : 0.000
 
@@ -146,11 +146,11 @@ Type  : Fast 1200mV 0C Model Hold 'echo'
 Slack : 1.141
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'divf:relojSensor|clkl'
+Type  : Fast 1200mV 0C Model Recovery 'divf:u2|clkl'
 Slack : 0.422
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'divf:relojSensor|clkl'
+Type  : Fast 1200mV 0C Model Removal 'divf:u2|clkl'
 Slack : 0.231
 TNS   : 0.000
 
@@ -162,11 +162,11 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'echo'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divf:relojSensor|clkl'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divf:u2|clkl'
 Slack : -1.000
 TNS   : -62.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divf:relojServo|clkl'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divf:u1|clkl'
 Slack : -1.000
 TNS   : -33.000
 

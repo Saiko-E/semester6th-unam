@@ -1,5 +1,5 @@
 Fitter report for proyecto1
-Tue Apr 22 23:12:39 2025
+Thu Apr 24 17:28:12 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Apr 22 23:12:39 2025          ;
+; Fitter Status                      ; Successful - Thu Apr 24 17:28:12 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; proyecto1                                      ;
 ; Top-level Entity Name              ; sensor                                         ;
@@ -154,12 +154,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.10        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.4%      ;
+;     Processor 2            ;  10.1%      ;
 +----------------------------+-------------+
 
 
@@ -347,22 +347,22 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
+; b            ; D7    ; 8        ; 29           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; controlServo ; E10   ; 8        ; 36           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; disparo      ; D7    ; 8        ; 29           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssD[0]       ; D8    ; 8        ; 31           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssD[1]       ; A5    ; 8        ; 31           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssD[2]       ; C6    ; 8        ; 29           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssD[3]       ; J10   ; 8        ; 34           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssD[4]       ; E9    ; 8        ; 29           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssD[5]       ; B7    ; 8        ; 34           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssD[6]       ; A4    ; 8        ; 31           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssU[0]       ; E11   ; 8        ; 36           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssU[1]       ; C8    ; 8        ; 36           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssU[2]       ; H11   ; 8        ; 34           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssU[3]       ; C9    ; 7        ; 46           ; 54           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssU[4]       ; C7    ; 8        ; 34           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssU[5]       ; E3    ; 1A       ; 0            ; 37           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ssU[6]       ; A6    ; 8        ; 34           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; decenas[0]   ; D8    ; 8        ; 31           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; decenas[1]   ; A5    ; 8        ; 31           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; decenas[2]   ; C6    ; 8        ; 29           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; decenas[3]   ; J10   ; 8        ; 34           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; decenas[4]   ; E9    ; 8        ; 29           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; decenas[5]   ; B7    ; 8        ; 34           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; decenas[6]   ; A4    ; 8        ; 31           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; unidades[0]  ; E11   ; 8        ; 36           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; unidades[1]  ; C8    ; 8        ; 36           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; unidades[2]  ; H11   ; 8        ; 34           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; unidades[3]  ; C9    ; 7        ; 46           ; 54           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; unidades[4]  ; C7    ; 8        ; 34           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; unidades[5]  ; E3    ; 1A       ; 0            ; 37           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; unidades[6]  ; A6    ; 8        ; 34           ; 39           ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -409,9 +409,9 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 ; A1       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; A2       ; 481        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A3       ; 483        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A4       ; 475        ; 8        ; ssD[6]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; A5       ; 473        ; 8        ; ssD[1]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; A6       ; 471        ; 8        ; ssU[6]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A4       ; 475        ; 8        ; decenas[6]                                     ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A5       ; 473        ; 8        ; decenas[1]                                     ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A6       ; 471        ; 8        ; unidades[6]                                    ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A7       ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A8       ; 447        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A9       ; 449        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -478,7 +478,7 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 ; B4       ; 486        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B5       ; 485        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; B7       ; 469        ; 8        ; ssD[5]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; B7       ; 469        ; 8        ; decenas[5]                                     ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B8       ; 451        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B10      ; 448        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -499,10 +499,10 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 ; C3       ; 497        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C4       ; 487        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C5       ; 489        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; C6       ; 477        ; 8        ; ssD[2]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; C7       ; 467        ; 8        ; ssU[4]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; C8       ; 465        ; 8        ; ssU[1]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; C9       ; 450        ; 7        ; ssU[3]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; C6       ; 477        ; 8        ; decenas[2]                                     ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; C7       ; 467        ; 8        ; unidades[4]                                    ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; C8       ; 465        ; 8        ; unidades[1]                                    ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; C9       ; 450        ; 7        ; unidades[3]                                    ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C10      ; 442        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C11      ; 440        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C12      ; 436        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -522,8 +522,8 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 ; D4       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D5       ; 491        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D6       ; 496        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; D7       ; 479        ; 8        ; disparo                                        ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; D8       ; 472        ; 8        ; ssD[0]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; D7       ; 479        ; 8        ; b                                              ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 472        ; 8        ; decenas[0]                                     ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D9       ; 474        ; 8        ; echo                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D10      ; 476        ; 8        ; reset                                          ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D11      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
@@ -540,15 +540,15 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 ; D22      ; 341        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E1       ; 41         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E2       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; E3       ; 3          ; 1A       ; ssU[5]                                         ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E3       ; 3          ; 1A       ; unidades[5]                                    ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; E4       ; 1          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E5       ;            ;          ; NC                                             ;        ;                       ;         ; --         ;                 ; --       ; --           ;
 ; E6       ; 498        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E7       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; E8       ; 488        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; E9       ; 478        ; 8        ; ssD[4]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; E9       ; 478        ; 8        ; decenas[4]                                     ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E10      ; 466        ; 8        ; controlServo                                   ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; E11      ; 464        ; 8        ; ssU[0]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; E11      ; 464        ; 8        ; unidades[0]                                    ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E12      ; 429        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E13      ; 430        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E14      ; 406        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -614,7 +614,7 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 ; H8       ;            ; --       ; VCCA3                                          ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H9       ; 482        ; 8        ; ~ALTERA_nCONFIG~ / RESERVED_INPUT              ; input  ; 2.5 V Schmitt Trigger ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H10      ; 480        ; 8        ; ~ALTERA_CONFIG_SEL~ / RESERVED_INPUT           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; H11      ; 470        ; 8        ; ssU[2]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; H11      ; 470        ; 8        ; unidades[2]                                    ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H12      ; 444        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H13      ; 432        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H14      ; 420        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -635,7 +635,7 @@ The pin-out file can be found in /home/nstor/vlsi/semester6th-unam/VLSI/proyecto
 ; J7       ;            ;          ; VCCINT                                         ; power  ;                       ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J8       ; 4          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J9       ; 6          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
-; J10      ; 468        ; 8        ; ssD[3]                                         ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; J10      ; 468        ; 8        ; decenas[3]                                     ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J11      ; 446        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J12      ; 434        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J13      ; 422        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -900,40 +900,40 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Pin Name     ; Reason                        ;
 +--------------+-------------------------------+
 ; controlServo ; Incomplete set of assignments ;
-; disparo      ; Incomplete set of assignments ;
-; ssU[0]       ; Incomplete set of assignments ;
-; ssU[1]       ; Incomplete set of assignments ;
-; ssU[2]       ; Incomplete set of assignments ;
-; ssU[3]       ; Incomplete set of assignments ;
-; ssU[4]       ; Incomplete set of assignments ;
-; ssU[5]       ; Incomplete set of assignments ;
-; ssU[6]       ; Incomplete set of assignments ;
-; ssD[0]       ; Incomplete set of assignments ;
-; ssD[1]       ; Incomplete set of assignments ;
-; ssD[2]       ; Incomplete set of assignments ;
-; ssD[3]       ; Incomplete set of assignments ;
-; ssD[4]       ; Incomplete set of assignments ;
-; ssD[5]       ; Incomplete set of assignments ;
-; ssD[6]       ; Incomplete set of assignments ;
+; b            ; Incomplete set of assignments ;
+; unidades[0]  ; Incomplete set of assignments ;
+; unidades[1]  ; Incomplete set of assignments ;
+; unidades[2]  ; Incomplete set of assignments ;
+; unidades[3]  ; Incomplete set of assignments ;
+; unidades[4]  ; Incomplete set of assignments ;
+; unidades[5]  ; Incomplete set of assignments ;
+; unidades[6]  ; Incomplete set of assignments ;
+; decenas[0]   ; Incomplete set of assignments ;
+; decenas[1]   ; Incomplete set of assignments ;
+; decenas[2]   ; Incomplete set of assignments ;
+; decenas[3]   ; Incomplete set of assignments ;
+; decenas[4]   ; Incomplete set of assignments ;
+; decenas[5]   ; Incomplete set of assignments ;
+; decenas[6]   ; Incomplete set of assignments ;
 ; echo         ; Incomplete set of assignments ;
 ; reset        ; Incomplete set of assignments ;
 ; clk          ; Incomplete set of assignments ;
 ; controlServo ; Missing location assignment   ;
-; disparo      ; Missing location assignment   ;
-; ssU[0]       ; Missing location assignment   ;
-; ssU[1]       ; Missing location assignment   ;
-; ssU[2]       ; Missing location assignment   ;
-; ssU[3]       ; Missing location assignment   ;
-; ssU[4]       ; Missing location assignment   ;
-; ssU[5]       ; Missing location assignment   ;
-; ssU[6]       ; Missing location assignment   ;
-; ssD[0]       ; Missing location assignment   ;
-; ssD[1]       ; Missing location assignment   ;
-; ssD[2]       ; Missing location assignment   ;
-; ssD[3]       ; Missing location assignment   ;
-; ssD[4]       ; Missing location assignment   ;
-; ssD[5]       ; Missing location assignment   ;
-; ssD[6]       ; Missing location assignment   ;
+; b            ; Missing location assignment   ;
+; unidades[0]  ; Missing location assignment   ;
+; unidades[1]  ; Missing location assignment   ;
+; unidades[2]  ; Missing location assignment   ;
+; unidades[3]  ; Missing location assignment   ;
+; unidades[4]  ; Missing location assignment   ;
+; unidades[5]  ; Missing location assignment   ;
+; unidades[6]  ; Missing location assignment   ;
+; decenas[0]   ; Missing location assignment   ;
+; decenas[1]   ; Missing location assignment   ;
+; decenas[2]   ; Missing location assignment   ;
+; decenas[3]   ; Missing location assignment   ;
+; decenas[4]   ; Missing location assignment   ;
+; decenas[5]   ; Missing location assignment   ;
+; decenas[6]   ; Missing location assignment   ;
 ; echo         ; Missing location assignment   ;
 ; reset        ; Missing location assignment   ;
 ; clk          ; Missing location assignment   ;
@@ -959,14 +959,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |lpm_divide_25o:auto_generated|  ; 456 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 422 (0)      ; 0 (0)             ; 34 (0)           ; 0          ; |sensor|contador:medicion|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                   ; lpm_divide_25o      ; work         ;
 ;             |abs_divider_4dg:divider|     ; 456 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 422 (0)      ; 0 (0)             ; 34 (0)           ; 0          ; |sensor|contador:medicion|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                           ; abs_divider_4dg     ; work         ;
 ;                |alt_u_div_ske:divider|    ; 456 (456)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 422 (422)    ; 0 (0)             ; 34 (34)          ; 0          ; |sensor|contador:medicion|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider     ; alt_u_div_ske       ; work         ;
-;    |dec7seg:bcdDec|                       ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|dec7seg:bcdDec                                                                                                    ; dec7seg             ; work         ;
-;    |dec7seg:bcdUni|                       ; 27 (27)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (27)      ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|dec7seg:bcdUni                                                                                                    ; dec7seg             ; work         ;
-;    |divf:relojSensor|                     ; 11 (11)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 1 (1)             ; 5 (5)            ; 0          ; |sensor|divf:relojSensor                                                                                                  ; divf                ; work         ;
-;    |divf:relojServo|                      ; 20 (20)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 1 (1)             ; 9 (9)            ; 0          ; |sensor|divf:relojServo                                                                                                   ; divf                ; work         ;
-;    |movimiento:posiServo|                 ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|movimiento:posiServo                                                                                              ; movimiento          ; work         ;
-;    |senal:pwmServo|                       ; 54 (54)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 1 (1)             ; 32 (32)          ; 0          ; |sensor|senal:pwmServo                                                                                                    ; senal               ; work         ;
-;    |senal:senalPWM|                       ; 58 (58)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 33 (33)          ; 0          ; |sensor|senal:senalPWM                                                                                                    ; senal               ; work         ;
-;    |trigger:gatillo|                      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|trigger:gatillo                                                                                                   ; trigger             ; work         ;
+;    |dec7seg:decena|                       ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|dec7seg:decena                                                                                                    ; dec7seg             ; work         ;
+;    |dec7seg:unidad|                       ; 27 (27)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (27)      ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|dec7seg:unidad                                                                                                    ; dec7seg             ; work         ;
+;    |divf:u1|                              ; 20 (20)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 1 (1)             ; 9 (9)            ; 0          ; |sensor|divf:u1                                                                                                           ; divf                ; work         ;
+;    |divf:u2|                              ; 11 (11)     ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 1 (1)             ; 5 (5)            ; 0          ; |sensor|divf:u2                                                                                                           ; divf                ; work         ;
+;    |movimiento:posicion|                  ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|movimiento:posicion                                                                                               ; movimiento          ; work         ;
+;    |senal:senal|                          ; 58 (58)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 33 (33)          ; 0          ; |sensor|senal:senal                                                                                                       ; senal               ; work         ;
+;    |senal:servo|                          ; 54 (54)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 1 (1)             ; 32 (32)          ; 0          ; |sensor|senal:servo                                                                                                       ; senal               ; work         ;
+;    |trigger:a|                            ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |sensor|trigger:a                                                                                                         ; trigger             ; work         ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -977,21 +977,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name         ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 ; controlServo ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; disparo      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssU[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssU[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssU[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssU[3]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssU[4]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssU[5]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssU[6]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssD[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssD[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssD[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssD[3]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssD[4]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssD[5]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; ssD[6]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; b            ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; unidades[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; unidades[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; unidades[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; unidades[3]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; unidades[4]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; unidades[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; unidades[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; decenas[0]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; decenas[1]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; decenas[2]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; decenas[3]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; decenas[4]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; decenas[5]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; decenas[6]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; echo         ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; reset        ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 ; clk          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
@@ -1019,18 +1019,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - contador:medicion|conteo[13]     ; 0                 ; 0       ;
 ;      - contador:medicion|unidades[31]~3 ; 1                 ; 0       ;
 ;      - contador:medicion|conteo[0]~39   ; 1                 ; 0       ;
-;      - trigger:gatillo|salida           ; 1                 ; 0       ;
+;      - trigger:a|salida                 ; 1                 ; 0       ;
 ; reset                                   ;                   ;         ;
-;      - senal:pwmServo|Equal0~7          ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~8          ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~9          ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~10         ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~11         ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~12         ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~13         ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~14         ; 1                 ; 6       ;
-;      - senal:pwmServo|Equal0~15         ; 1                 ; 6       ;
-;      - trigger:gatillo|salida           ; 1                 ; 6       ;
+;      - senal:servo|Equal0~7             ; 1                 ; 6       ;
+;      - senal:servo|Equal0~8             ; 1                 ; 6       ;
+;      - senal:servo|Equal0~9             ; 1                 ; 6       ;
+;      - senal:servo|Equal0~10            ; 1                 ; 6       ;
+;      - senal:servo|Equal0~11            ; 1                 ; 6       ;
+;      - senal:servo|Equal0~12            ; 1                 ; 6       ;
+;      - senal:servo|Equal0~13            ; 1                 ; 6       ;
+;      - senal:servo|Equal0~14            ; 1                 ; 6       ;
+;      - senal:servo|Equal0~15            ; 1                 ; 6       ;
+;      - trigger:a|salida                 ; 1                 ; 6       ;
 ; clk                                     ;                   ;         ;
 +-----------------------------------------+-------------------+---------+
 
@@ -1042,23 +1042,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; clk                              ; PIN_M8             ; 49      ; Clock                      ; yes    ; Global Clock         ; GCLK3            ; --                        ;
 ; contador:medicion|unidades[31]~7 ; LCCOMB_X32_Y35_N10 ; 48      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; divf:relojSensor|clkl            ; FF_X45_Y1_N27      ; 62      ; Clock                      ; yes    ; Global Clock         ; GCLK15           ; --                        ;
-; divf:relojServo|clkl             ; FF_X77_Y37_N5      ; 33      ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; divf:u1|clkl                     ; FF_X77_Y37_N5      ; 33      ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; divf:u2|clkl                     ; FF_X45_Y1_N27      ; 62      ; Clock                      ; yes    ; Global Clock         ; GCLK15           ; --                        ;
 ; echo                             ; PIN_D9             ; 16      ; Clock enable, Latch enable ; no     ; --                   ; --               ; --                        ;
-; senal:pwmServo|Equal0~16         ; LCCOMB_X36_Y34_N26 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; trigger:gatillo|salida           ; LCCOMB_X32_Y35_N6  ; 17      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; senal:servo|Equal0~16            ; LCCOMB_X36_Y34_N26 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; trigger:a|salida                 ; LCCOMB_X32_Y35_N6  ; 17      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
 +----------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                  ;
-+-----------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                  ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk                   ; PIN_M8        ; 49      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
-; divf:relojSensor|clkl ; FF_X45_Y1_N27 ; 62      ; 0                                    ; Global Clock         ; GCLK15           ; --                        ;
-; divf:relojServo|clkl  ; FF_X77_Y37_N5 ; 33      ; 7                                    ; Global Clock         ; GCLK9            ; --                        ;
-+-----------------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                         ;
++--------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name         ; Location      ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; clk          ; PIN_M8        ; 49      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
+; divf:u1|clkl ; FF_X77_Y37_N5 ; 33      ; 7                                    ; Global Clock         ; GCLK9            ; --                        ;
+; divf:u2|clkl ; FF_X45_Y1_N27 ; 62      ; 0                                    ; Global Clock         ; GCLK15           ; --                        ;
++--------------+---------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------------------------+
@@ -1290,21 +1290,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total Inapplicable ; 19           ; 19           ; 19           ; 19           ; 19           ; 0         ; 19           ; 19           ; 19           ; 19           ; 19           ; 19           ; 19           ; 3            ; 19           ; 19           ; 19           ; 16           ; 3            ; 19           ; 16           ; 19           ; 19           ; 3            ; 19           ; 0         ; 0         ; 0         ; 19           ; 19           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
 ; controlServo       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; disparo            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssU[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssU[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssU[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssU[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssU[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssU[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssU[6]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssD[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssD[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssD[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssD[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssD[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssD[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; ssD[6]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; b                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; unidades[0]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; unidades[1]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; unidades[2]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; unidades[3]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; unidades[4]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; unidades[5]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; unidades[6]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; decenas[0]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; decenas[1]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; decenas[2]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; decenas[3]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; decenas[4]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; decenas[5]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; decenas[6]         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; echo               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; reset              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1348,16 +1348,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+----------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                              ;
-+--------------------------------+-----------------------+-------------------+
-; Source Clock(s)                ; Destination Clock(s)  ; Delay Added in ns ;
-+--------------------------------+-----------------------+-------------------+
-; divf:relojSensor|clkl,echo,I/O ; divf:relojSensor|clkl ; 15.2              ;
-; clk                            ; clk                   ; 10.4              ;
-; I/O                            ; divf:relojSensor|clkl ; 9.4               ;
-; echo                           ; divf:relojSensor|clkl ; 2.3               ;
-+--------------------------------+-----------------------+-------------------+
++------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                    ;
++-----------------------+----------------------+-------------------+
+; Source Clock(s)       ; Destination Clock(s) ; Delay Added in ns ;
++-----------------------+----------------------+-------------------+
+; divf:u2|clkl,echo,I/O ; divf:u2|clkl         ; 15.2              ;
+; clk                   ; clk                  ; 10.4              ;
+; I/O                   ; divf:u2|clkl         ; 9.4               ;
+; echo                  ; divf:u2|clkl         ; 2.3               ;
++-----------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
@@ -1367,24 +1367,24 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------+--------------------------------+-------------------+
 ; Source Register              ; Destination Register           ; Delay Added in ns ;
 +------------------------------+--------------------------------+-------------------+
-; divf:relojServo|clkl         ; divf:relojServo|clkl           ; 5.218             ;
-; divf:relojSensor|clkl        ; divf:relojSensor|clkl          ; 5.215             ;
-; divf:relojSensor|conteo[3]   ; divf:relojSensor|clkl          ; 2.499             ;
-; divf:relojSensor|conteo[4]   ; divf:relojSensor|clkl          ; 2.499             ;
-; divf:relojSensor|conteo[1]   ; divf:relojSensor|clkl          ; 2.499             ;
-; divf:relojSensor|conteo[0]   ; divf:relojSensor|clkl          ; 2.499             ;
-; divf:relojSensor|conteo[2]   ; divf:relojSensor|clkl          ; 2.499             ;
-; divf:relojServo|conteo[6]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[5]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[4]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[2]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[1]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[0]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[3]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[8]    ; divf:relojServo|clkl           ; 2.443             ;
-; divf:relojServo|conteo[7]    ; divf:relojServo|clkl           ; 2.443             ;
+; divf:u1|clkl                 ; divf:u1|clkl                   ; 5.218             ;
+; divf:u2|clkl                 ; divf:u2|clkl                   ; 5.215             ;
+; divf:u2|conteo[3]            ; divf:u2|clkl                   ; 2.499             ;
+; divf:u2|conteo[4]            ; divf:u2|clkl                   ; 2.499             ;
+; divf:u2|conteo[1]            ; divf:u2|clkl                   ; 2.499             ;
+; divf:u2|conteo[0]            ; divf:u2|clkl                   ; 2.499             ;
+; divf:u2|conteo[2]            ; divf:u2|clkl                   ; 2.499             ;
+; divf:u1|conteo[6]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[5]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[4]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[2]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[1]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[0]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[3]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[8]            ; divf:u1|clkl                   ; 2.443             ;
+; divf:u1|conteo[7]            ; divf:u1|clkl                   ; 2.443             ;
 ; echo                         ; contador:medicion|conteo[1]    ; 2.271             ;
-; trigger:gatillo|salida       ; contador:medicion|distancia[0] ; 1.494             ;
+; trigger:a|salida             ; contador:medicion|distancia[0] ; 1.494             ;
 ; contador:medicion|conteo[12] ; contador:medicion|distancia[0] ; 1.494             ;
 ; contador:medicion|conteo[13] ; contador:medicion|distancia[0] ; 1.494             ;
 ; contador:medicion|conteo[10] ; contador:medicion|distancia[0] ; 1.494             ;
@@ -1450,14 +1450,14 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node clk~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/sensor.vhd Line: 7
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node divf:relojSensor|clkl  File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
+Info (176353): Automatically promoted node divf:u2|clkl  File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node divf:relojSensor|clkl~0 File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
-Info (176353): Automatically promoted node divf:relojServo|clkl  File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
+        Info (176357): Destination node divf:u2|clkl~0 File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
+Info (176353): Automatically promoted node divf:u1|clkl  File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node divf:relojServo|clkl~0 File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
+        Info (176357): Destination node divf:u1|clkl~0 File: /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/divf.vhd Line: 9
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1475,7 +1475,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  60 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  52 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1493,13 +1493,13 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file /home/nstor/vlsi/semester6th-unam/VLSI/proyecto1/output_files/proyecto1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 805 megabytes
-    Info: Processing ended: Tue Apr 22 23:12:40 2025
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Processing ended: Thu Apr 24 17:28:13 2025
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +----------------------------+

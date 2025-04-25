@@ -1,30 +1,30 @@
 |sensor
-clk => divf:relojServo.clk
-clk => divf:relojSensor.clk
-clk => senal:senalPWM.clk
-reset => trigger:gatillo.rst
-reset => movimiento:posiServo.reset
-echo => trigger:gatillo.echo
+clk => divf:u1.clk
+clk => divf:u2.clk
+clk => senal:senal.clk
+reset => trigger:a.rst
+reset => movimiento:posicion.reset
+echo => trigger:a.echo
 echo => contador:medicion.echo
-controlServo <= senal:pwmServo.snl
-disparo <= trigger:gatillo.salida
-ssU[0] <= dec7seg:bcdUni.salida[0]
-ssU[1] <= dec7seg:bcdUni.salida[1]
-ssU[2] <= dec7seg:bcdUni.salida[2]
-ssU[3] <= dec7seg:bcdUni.salida[3]
-ssU[4] <= dec7seg:bcdUni.salida[4]
-ssU[5] <= dec7seg:bcdUni.salida[5]
-ssU[6] <= dec7seg:bcdUni.salida[6]
-ssD[0] <= dec7seg:bcdDec.salida[0]
-ssD[1] <= dec7seg:bcdDec.salida[1]
-ssD[2] <= dec7seg:bcdDec.salida[2]
-ssD[3] <= dec7seg:bcdDec.salida[3]
-ssD[4] <= dec7seg:bcdDec.salida[4]
-ssD[5] <= dec7seg:bcdDec.salida[5]
-ssD[6] <= dec7seg:bcdDec.salida[6]
+controlServo <= senal:servo.snl
+b <= trigger:a.salida
+unidades[0] <= dec7seg:unidad.salida[0]
+unidades[1] <= dec7seg:unidad.salida[1]
+unidades[2] <= dec7seg:unidad.salida[2]
+unidades[3] <= dec7seg:unidad.salida[3]
+unidades[4] <= dec7seg:unidad.salida[4]
+unidades[5] <= dec7seg:unidad.salida[5]
+unidades[6] <= dec7seg:unidad.salida[6]
+decenas[0] <= dec7seg:decena.salida[0]
+decenas[1] <= dec7seg:decena.salida[1]
+decenas[2] <= dec7seg:decena.salida[2]
+decenas[3] <= dec7seg:decena.salida[3]
+decenas[4] <= dec7seg:decena.salida[4]
+decenas[5] <= dec7seg:decena.salida[5]
+decenas[6] <= dec7seg:decena.salida[6]
 
 
-|sensor|divf:relojServo
+|sensor|divf:u1
 clk => clkl~reg0.CLK
 clk => conteo[0].CLK
 clk => conteo[1].CLK
@@ -38,7 +38,7 @@ clk => conteo[8].CLK
 clkl <= clkl~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sensor|divf:relojSensor
+|sensor|divf:u2
 clk => clkl~reg0.CLK
 clk => conteo[0].CLK
 clk => conteo[1].CLK
@@ -48,7 +48,7 @@ clk => conteo[4].CLK
 clkl <= clkl~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sensor|senal:senalPWM
+|sensor|senal:senal
 clk => conteo[0].CLK
 clk => conteo[1].CLK
 clk => conteo[2].CLK
@@ -149,7 +149,7 @@ limite[31] => Equal0.IN0
 snl <= snl~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sensor|trigger:gatillo
+|sensor|trigger:a
 clk => salida$latch.DATAIN
 rst => salida$latch.ACLR
 echo => salida$latch.LATCH_ENABLE
@@ -585,7 +585,7 @@ decenas[30] <= decenas[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 decenas[31] <= decenas[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sensor|dec7seg:bcdUni
+|sensor|dec7seg:unidad
 entrada[0] => Equal0.IN31
 entrada[0] => Equal1.IN31
 entrada[0] => Equal2.IN30
@@ -915,7 +915,7 @@ salida[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 salida[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sensor|dec7seg:bcdDec
+|sensor|dec7seg:decena
 entrada[0] => Equal0.IN31
 entrada[0] => Equal1.IN31
 entrada[0] => Equal2.IN30
@@ -1245,7 +1245,7 @@ salida[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 salida[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sensor|movimiento:posiServo
+|sensor|movimiento:posicion
 distancia[0] => Add0.IN62
 distancia[0] => valor.DATAA
 distancia[1] => Add0.IN61
@@ -1353,7 +1353,7 @@ ancho[30] <= <GND>
 ancho[31] <= <GND>
 
 
-|sensor|senal:pwmServo
+|sensor|senal:servo
 clk => conteo[0].CLK
 clk => conteo[1].CLK
 clk => conteo[2].CLK

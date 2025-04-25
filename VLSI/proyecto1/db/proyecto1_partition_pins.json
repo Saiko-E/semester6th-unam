@@ -8,63 +8,63 @@
 					"strict" : false
 				},
 				{
-					"name" : "disparo",
+					"name" : "b",
 					"strict" : false
 				},
 				{
-					"name" : "ssU[0]",
+					"name" : "unidades[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ssU[1]",
+					"name" : "unidades[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ssU[2]",
+					"name" : "unidades[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ssU[3]",
+					"name" : "unidades[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ssU[4]",
+					"name" : "unidades[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ssU[5]",
+					"name" : "unidades[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ssU[6]",
+					"name" : "unidades[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ssD[0]",
+					"name" : "decenas[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ssD[1]",
+					"name" : "decenas[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ssD[2]",
+					"name" : "decenas[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ssD[3]",
+					"name" : "decenas[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ssD[4]",
+					"name" : "decenas[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ssD[5]",
+					"name" : "decenas[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ssD[6]",
+					"name" : "decenas[6]",
 					"strict" : false
 				},
 				{
